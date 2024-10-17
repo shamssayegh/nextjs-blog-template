@@ -1,0 +1,94 @@
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+
+export const metadata = {
+  title: "Stories - Personal Blog HTML Template",
+  description: "",
+};
+
+{/* Reusable Header Component */}
+<Header />
+
+{/* Offcanvas Sidebar */}
+<aside id="sidebar-wrapper" className="custom-scrollbar offcanvas-sidebar">
+  <button className="off-canvas-close">
+    <i className="elegant-icon icon_close"></i>
+  </button>
+  <div className="sidebar-inner">
+    <div className="sidebar-widget widget_categories mb-50 mt-30">
+      <div className="widget-header-2 position-relative">
+        <h5 className="mt-5 mb-15">Hot topics</h5>
+      </div>
+      <div className="widget_nav_menu">
+        <ul>
+          <li className="cat-item cat-item-2">
+            <Link href="/category">Travel tips</Link>
+            <span className="post-count">30</span>
+          </li>
+          <li className="cat-item cat-item-3">
+            <Link href="/category-grid">Book review</Link>
+            <span className="post-count">25</span>
+          </li>
+          <li className="cat-item cat-item-4">
+            <Link href="/category-list">Hotel review</Link>
+            <span className="post-count">16</span>
+          </li>
+          <li className="cat-item cat-item-5">
+            <Link href="/category-masonry">Destinations</Link>
+            <span className="post-count">22</span>
+          </li>
+          <li className="cat-item cat-item-6">
+            <Link href="/category-big">Lifestyle</Link>
+            <span className="post-count">25</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div className="sidebar-widget widget-latest-posts mb-50">
+      <div className="widget-header-2 position-relative mb-30">
+        <h5 className="mt-5 mb-30">Don't miss</h5>
+      </div>
+      <div className="post-block-list post-module-1 post-module-5">
+        <ul className="list-post">
+          <li className="mb-30">
+            <div className="d-flex hover-up-2 transition-normal">
+              <div className="post-thumb post-thumb-80 d-flex mr-15 border-radius-5 img-hover-scale overflow-hidden">
+                <Link href="/single">
+                  <Image src="http://via.placeholder.com/500x500" alt="" width={80} height={80} />
+                </Link>
+              </div>
+              <div className="post-content media-body">
+                <h6 className="post-title mb-15 text-limit-2-row font-medium">
+                  <Link href="/single">The Life of a Travel Writer with David Farley</Link>
+                </h6>
+                <div className="entry-meta meta-1 float-left font-x-small text-uppercase">
+                  <span className="post-on">05 August</span>
+                  <span className="post-by has-dot">300 views</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          {/* Add other posts similarly */}
+        </ul>
+      </div>
+    </div>
+
+    {/* Advertisement Section */}
+    <div className="sidebar-widget widget-ads">
+      <div className="widget-header-2 position-relative mb-30">
+        <h5 className="mt-5 mb-30">Advertise banner</h5>
+      </div>
+      <a href="https://themeforest.net/user/alithemes/portfolio" target="_blank" rel="noreferrer">
+        <Image className="advertise-img border-radius-5" src="http://via.placeholder.com/432x558" alt="" width={432} height={558} />
+      </a>
+    </div>
+  </div>
+</aside>
+
+{/* Main content can be added here */}
+
+<Footer />

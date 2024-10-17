@@ -1,0 +1,181 @@
+// pages/category-masonry.js
+import Head from 'next/head';
+import Link from 'next/link';
+import React from 'react';
+import Header from '@/components/Header';  // Reusable Header component
+import Footer from '@/components/Footer';  // Reusable Footer component
+
+export default function CategoryMasonry() {
+  return (
+    <>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <title>Stories - Category Masonry</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="/assets/imgs/theme/favicon.png" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="/assets/css/widgets.css" />
+        <link rel="stylesheet" href="/assets/css/responsive.css" />
+      </Head>
+
+      <div className="scroll-progress primary-bg"></div>
+
+      {/* Offcanvas sidebar */}
+      <aside id="sidebar-wrapper" className="custom-scrollbar offcanvas-sidebar">
+        <button className="off-canvas-close"><i className="elegant-icon icon_close"></i></button>
+        <div className="sidebar-inner">
+          {/* Categories */}
+          <div className="sidebar-widget widget_categories mb-50 mt-30">
+            <div className="widget-header-2 position-relative">
+              <h5 className="mt-5 mb-15">Hot topics</h5>
+            </div>
+            <div className="widget_nav_menu">
+              <ul>
+                <li className="cat-item cat-item-2"><Link href="/category">Travel tips</Link><span className="post-count">30</span></li>
+                <li className="cat-item cat-item-3"><Link href="/category-grid">Book review</Link><span className="post-count">25</span></li>
+                <li className="cat-item cat-item-4"><Link href="/category-list">Hotel review</Link><span className="post-count">16</span></li>
+                <li className="cat-item cat-item-5"><Link href="/category-masonry">Destinations</Link><span className="post-count">22</span></li>
+                <li className="cat-item cat-item-6"><Link href="/category-big">Lifestyle</Link><span className="post-count">25</span></li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Latest */}
+          <div className="sidebar-widget widget-latest-posts mb-50">
+            <div className="widget-header-2 position-relative mb-30">
+              <h5 className="mt-5 mb-30">Don't miss</h5>
+            </div>
+            <div className="post-block-list post-module-1 post-module-5">
+              <ul className="list-post">
+                <li className="mb-30">
+                  <div className="d-flex hover-up-2 transition-normal">
+                    <div className="post-thumb post-thumb-80 d-flex mr-15 border-radius-5 img-hover-scale overflow-hidden">
+                      <Link className="color-white" href="/single"><img src="http://via.placeholder.com/500x500" alt="Post" /></Link>
+                    </div>
+                    <div className="post-content media-body">
+                      <h6 className="post-title mb-15 text-limit-2-row font-medium"><Link href="/single">The Life of a Travel Writer with David Farley</Link></h6>
+                      <div className="entry-meta meta-1 float-left font-x-small text-uppercase">
+                        <span className="post-on">05 August</span>
+                        <span className="post-by has-dot">300 views</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                {/* Add additional posts similarly */}
+              </ul>
+            </div>
+          </div>
+
+          {/* Ads */}
+          <div className="sidebar-widget widget-ads">
+            <div className="widget-header-2 position-relative mb-30">
+              <h5 className="mt-5 mb-30">Advertise banner</h5>
+            </div>
+            <a href="https://themeforest.net/user/alithemes/portfolio" target="_blank">
+              <img className="advertise-img border-radius-5" src="http://via.placeholder.com/432x558" alt="Advertise" />
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      {/* Header */}
+      <Header />
+
+      {/* Main content */}
+      <main>
+        {/* Archive header */}
+        <div className="archive-header pt-50 text-center pb-50">
+          <div className="container">
+            <h2 className="font-weight-900">Hotels Review</h2>
+            <div className="breadcrumb">
+              <Link href="/"><a rel="nofollow">Home</a></Link>
+              <span> Hotels Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="container">
+          {/* Loop Masonry */}
+          <div className="grid row mb-30">
+            <div className="grid-sizer"></div>
+
+            {/* Articles */}
+            <article className="grid-item col pb-50 wow fadeIn animated">
+              <div className="post-card-1 border-radius-10 hover-up">
+                <div className="post-thumb thumb-overlay img-hover-slide position-relative" style={{ backgroundImage: 'url(http://via.placeholder.com/1000x600)' }}>
+                  <Link href="/single"><a className="img-link"></a></Link>
+                  <span className="top-right-icon bg-success"><i className="elegant-icon icon_camera_alt"></i></span>
+                  <ul className="social-share">
+                    <li><a href="#"><i className="elegant-icon social_share"></i></a></li>
+                    <li><a className="fb" href="#" title="Share on Facebook" target="_blank"><i className="elegant-icon social_facebook"></i></a></li>
+                    <li><a className="tw" href="#" target="_blank" title="Tweet now"><i className="elegant-icon social_twitter"></i></a></li>
+                    <li><a className="pt" href="#" target="_blank" title="Pin it"><i className="elegant-icon social_pinterest"></i></a></li>
+                  </ul>
+                </div>
+                <div className="post-content p-30">
+                  <div className="entry-meta meta-0 font-small mb-10">
+                    <Link href="/category"><span className="post-cat text-info">Travel</span></Link>
+                    <Link href="/category"><span className="post-cat text-success">Food</span></Link>
+                  </div>
+                  <h5 className="post-title mb-20 font-weight-900">
+                    <Link href="/single">Want fluffy Japanese pancakes but can’t fly to Tokyo?</Link>
+                  </h5>
+                  <div className="entry-meta meta-1 float-left font-x-small text-uppercase">
+                    <span className="post-on">27 August</span>
+                    <span className="time-reading has-dot">12 mins read</span>
+                    <span className="post-by has-dot">23k views</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            {/* Add similar article blocks as necessary */}
+          </div>
+
+          {/* Pagination */}
+          <div className="row">
+            <div className="col-12">
+              <div className="pagination-area mb-30 wow fadeInUp animated">
+                <nav aria-label="Page navigation example">
+                  <ul className="pagination justify-content-start">
+                    <li className="page-item"><a className="page-link" href="#"><i className="elegant-icon arrow_left"></i></a></li>
+                    <li className="page-item active"><a className="page-link" href="#">01</a></li>
+                    <li className="page-item"><a className="page-link" href="#">02</a></li>
+                    <li className="page-item"><a className="page-link" href="#">03</a></li>
+                    <li className="page-item"><a className="page-link" href="#"><i className="elegant-icon arrow_right"></i></a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <Footer />
+
+      {/* Scripts */}
+      <script src="/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+      <script src="/assets/js/vendor/jquery-3.6.0.min.js"></script>
+      <script src="/assets/js/vendor/popper.min.js"></script>
+      <script src="/assets/js/vendor/bootstrap.min.js"></script>
+      <script src="/assets/js/vendor/jquery.slicknav.js"></script>
+      <script src="/assets/js/vendor/slick.min.js"></script>
+      <script src="/assets/js/vendor/wow.min.js"></script>
+      <script src="/assets/js/vendor/jquery.ticker.js"></script>
+      <script src="/assets/js/vendor/jquery.vticker-min.js"></script>
+      <script src="/assets/js/vendor/jquery.scrollUp.min.js"></script>
+      <script src="/assets/js/vendor/jquery.nice-select.min.js"></script>
+      <script src="/assets/js/vendor/jquery.magnific-popup.js"></script>
+      <script src="/assets/js/vendor/jquery.sticky.js"></script>
+      <script src="/assets/js/vendor/perfect-scrollbar.js"></script>
+      <script src="/assets/js/vendor/waypoints.min.js"></script>
+      <script src="/assets/js/vendor/jquery.theia.sticky.js"></script>
+      <script src="/assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+      <script src="/assets/js/vendor/masonry.pkgd.min.js"></script>
+      <script src="/assets/js/main.js"></script>
+    </>
+  );
+}

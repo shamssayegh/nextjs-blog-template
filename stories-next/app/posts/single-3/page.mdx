@@ -1,0 +1,76 @@
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Image from 'next/image';
+import Link from 'next/link';
+import { title } from 'process';
+import React from 'react';
+
+<><Header /><main className="bg-grey pb-30">
+  <div className="container single-content">
+    <div className="entry-header pt-80 pb-30 mb-20">
+      <div className="row">
+        <div className="col-md-6 mb-md-0 mb-sm-3">
+          <figure className="mb-0 mt-lg-0 mt-3 border-radius-5">
+            <Image
+              src="/assets/imgs/posts/sample-post.jpg"
+              alt="Post Image"
+              width={1000}
+              height={600}
+              className="border-radius-5" />
+          </figure>
+        </div>
+        <div className="col-md-6 align-self-center">
+          <div className="post-content">
+            <div className="entry-meta meta-0 mb-15 font-small">
+              <Link href="/category">
+                <span className="post-cat position-relative text-info">
+                  Travel tips
+                </span>
+              </Link>
+              <Link href="/category">
+                <span className="post-cat position-relative text-success">
+                  Food
+                </span>
+              </Link>
+            </div>
+            <h1 className="entry-title mb-30 font-weight-900">
+              The Best Time to Travel to Cambodia
+            </h1>
+            <p className="excerpt mb-30">
+              As school districts across the United States consider whether and how to restart in-person classes, their challenge is complicated by a pair of fundamental uncertainties.
+            </p>
+            <div className="entry-meta align-items-center meta-2 font-small color-muted">
+              <p className="mb-5">
+                <a className="author-avatar" href="#">
+                  <Image
+                    src="http://via.placeholder.com/300x300"
+                    alt="Author"
+                    width={50}
+                    height={50}
+                    className="img-circle" />
+                </a>
+                By{' '}
+                <Link href="/author">
+                  <span className="author-name font-weight-bold">
+                    Barbara Cartland
+                  </span>
+                </Link>
+              </p>
+              <span className="mr-10"> 15 April 2020</span>
+              <span className="has-dot"> 8 mins read</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Article Content */}
+    <article className="entry-wrapper mb-50">
+      <div className="excerpt mb-30">
+        <p>
+          Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far bald that roadrunner python inside held shrewdly the manatee.
+        </p>
+      </div>
+    </article>
+  </div>
+</main><Footer /></>

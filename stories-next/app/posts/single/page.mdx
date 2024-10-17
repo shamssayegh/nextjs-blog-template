@@ -1,0 +1,86 @@
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Sidebar from '@/components/Sidebar';
+import Image from 'next/image';
+import Link from 'next/link';
+import { title } from 'process';
+import React from 'react';
+
+<><Header /><div className="scroll-progress primary-bg"></div><main className="bg-grey pb-30">
+  <div className="container single-content">
+    <div className="entry-header entry-header-style-1 mb-50 pt-50">
+      <h1 className="entry-title mb-50 font-weight-900">
+        The effect of livestock on the physiological condition of roe deer is modulated by habitat quality
+      </h1>
+      <div className="row">
+        <div className="col-md-6">
+          <div className="entry-meta align-items-center meta-2 font-small color-muted">
+            <p className="mb-5">
+              <Link href="/author">
+                <a className="author-avatar">
+                  <Image className="img-circle" src="/assets/imgs/theme/avatar.png" alt="" width={300} height={300} />
+                </a>
+              </Link>
+              By <Link href="/author"><a><span className="author-name font-weight-bold">Barbara Cartland</span></a></Link>
+            </p>
+            <span className="mr-10"> 15 April 2020</span>
+            <span className="has-dot"> 8 mins read</span>
+          </div>
+        </div>
+        <div className="col-md-6 text-right d-none d-md-inline">
+          <ul className="header-social-network d-inline-block list-inline mr-15">
+            <li className="list-inline-item text-muted"><span>Share this: </span></li>
+            <li className="list-inline-item"><a className="social-icon fb text-xs-center" target="_blank" href="#"><i className="elegant-icon social_facebook"></i></a></li>
+            <li className="list-inline-item"><a className="social-icon tw text-xs-center" target="_blank" href="#"><i className="elegant-icon social_twitter"></i></a></li>
+            <li className="list-inline-item"><a className="social-icon pt text-xs-center" target="_blank" href="#"><i className="elegant-icon social_pinterest"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {/* End Single Header */}
+    <figure className="image mb-30 m-auto text-center border-radius-10">
+      <Image className="border-radius-10" src="http://via.placeholder.com/1000x600" alt="post-title" width={1000} height={600} />
+    </figure>
+    {/* Begin Article Content */}
+    <article className="entry-wraper mb-50">
+      <div className="excerpt mb-30">
+        <p>
+          Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard roadrunner flapped lynx far that and jeepers giggled far and far bald that roadrunner python inside held shrewdly the manatee.
+        </p>
+      </div>
+      <div className="entry-main-content dropcap wow fadeIn animated">
+        <p>
+          Fretful human far recklessly while caterpillar well a well blubbered added one a some far whispered rampantly whispered while irksome far clung irrespective wailed more rosily and where saluted while black dear so yikes as considering recast to some crass until.
+        </p>
+        <hr className="wp-block-separator is-style-dots" />
+        <p>
+          Thanks sniffed in hello after in foolhardy and some far purposefully much one at the much conjointly leapt skimpily that quail sheep some goodness <Link href="#"><a>nightingale</a></Link> the instead exited expedient up far ouch mellifluous altruistic and and lighted more instead much when ferret but the.
+        </p>
+        <figure className="wp-block-gallery columns-3 wp-block-image">
+          <ul className="blocks-gallery-grid">
+            <li className="blocks-gallery-item">
+              <Link href="#">
+                <a><Image className="border-radius-5" src="http://via.placeholder.com/500x500" alt="" width={500} height={500} /></a>
+              </Link>
+            </li>
+            <li className="blocks-gallery-item">
+              <Link href="#">
+                <a><Image className="border-radius-5" src="http://via.placeholder.com/500x500" alt="" width={500} height={500} /></a>
+              </Link>
+            </li>
+            <li className="blocks-gallery-item">
+              <Link href="#">
+                <a><Image className="border-radius-5" src="http://via.placeholder.com/500x500" alt="" width={500} height={500} /></a>
+              </Link>
+            </li>
+          </ul>
+          <figcaption><i className="ti-credit-card mr-5"></i>Image credit: Behance</figcaption>
+        </figure>
+        <hr className="section-divider" />
+        <p>
+          Yet more some certainly yet alas abandonedly whispered <Link href="#"><a>intriguingly</a></Link><sup><Link href="#"><a>[2]</a></Link></sup> well extensive one howled talkative admonishingly below a rethought overlaid dear gosh activated less <Link href="#"><a>however</a></Link> hawk yet oh scratched ostrich some outside crud irrespective lightheartedly and much far amenably that the elephant since when.
+        </p>
+      </div>
+    </article>
+  </div>
+</main><Sidebar /><Footer /></>

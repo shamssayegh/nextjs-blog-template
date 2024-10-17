@@ -1,0 +1,68 @@
+import Head from "next/head";
+import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Sidebar from "@/components/Sidebar";
+import React from "react";
+
+export const metadata = {
+  title: "Stories - Category Default",
+  description: "",
+};
+
+<><Head>
+  <meta charSet="utf-8" />
+  <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+  <title>{metadata.title}</title>
+  <meta name="description" content={metadata.description} />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/imgs/theme/favicon.png" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/widgets.css" />
+  <link rel="stylesheet" href="/assets/css/responsive.css" />
+</Head><Sidebar /><Header /></>
+
+{/* Search Form */}
+<div className="main-search-form">
+  <div className="container">
+    <div className="pt-50 pb-50">
+      <div className="row mb-20">
+        <div className="col-12 align-self-center main-search-form-cover m-auto">
+          <p className="text-center">
+            <span className="search-text-bg">Search</span>
+          </p>
+          <form action="#" className="search-header">
+            <div className="input-group w-100">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Search stories, places and people"
+              />
+              <div className="input-group-append">
+                <button className="btn btn-search bg-white" type="submit">
+                  <i className="elegant-icon icon_search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* Main Content */}
+<><div className="container">
+  <div className="row">
+    <div className="col-lg-8">
+      <h1>Category Page Content</h1>
+      {/* Add your category-specific content */}
+    </div>
+    <div className="col-lg-4">
+      <Sidebar />
+    </div>
+  </div>
+</div><Footer /><div className="dark-mark"></div></>
+
+{/* Vendor JS */}
+<><script src="/assets/js/vendor/modernizr-3.6.0.min.js"></script><script src="/assets/js/vendor/jquery-3.6.0.min.js"></script><script src="/assets/js/vendor/popper.min.js"></script><script src="/assets/js/vendor/bootstrap.min.js"></script><script src="/assets/js/vendor/jquery.slicknav.js"></script><script src="/assets/js/vendor/slick.min.js"></script><script src="/assets/js/vendor/wow.min.js"></script><script src="/assets/js/vendor/jquery.ticker.js"></script><script src="/assets/js/vendor/jquery.vticker-min.js"></script><script src="/assets/js/vendor/jquery.scrollUp.min.js"></script><script src="/assets/js/vendor/jquery.nice-select.min.js"></script><script src="/assets/js/vendor/jquery.magnific-popup.js"></script><script src="/assets/js/vendor/jquery.sticky.js"></script><script src="/assets/js/vendor/perfect-scrollbar.js"></script><script src="/assets/js/vendor/waypoints.min.js"></script><script src="/assets/js/vendor/jquery.theia.sticky.js"></script><script src="/assets/js/main.js"></script></>

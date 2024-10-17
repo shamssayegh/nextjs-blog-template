@@ -1,0 +1,112 @@
+import Head from 'next/head';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import Sidebar from '@/components/Sidebar';
+import React from 'react';
+
+export default function SinglePost() {
+  return (
+    <>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Stories - Single post with big image</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="/assets/imgs/theme/favicon.png" />
+      </Head>
+      
+      <div className="scroll-progress primary-bg"></div>
+
+      {/* Preloader */}
+      <div className="preloader text-center">
+        <div className="circle"></div>
+      </div>
+
+      {/* Offcanvas Sidebar */}
+      <Sidebar />
+
+      {/* Main Header */}
+      <Header />
+
+      {/* Search Form */}
+      <div className="main-search-form">
+        <div className="container">
+          <div className="pt-50 pb-50">
+            <div className="row mb-20">
+              <div className="col-12 align-self-center main-search-form-cover m-auto">
+                <p className="text-center"><span className="search-text-bg">Search</span></p>
+                <form className="search-header">
+                  <div className="input-group w-100">
+                    <input type="text" className="form-control" placeholder="Search stories, places and people" />
+                    <div className="input-group-append">
+                      <button className="btn btn-search bg-white" type="submit">
+                        <i className="elegant-icon icon_search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            {/* Suggested keywords */}
+            <div className="row mt-80 text-center">
+              <div className="col-12 font-small suggested-area">
+                <h5 className="suggested font-heading mb-20 text-muted"> <strong>Suggested keywords:</strong></h5>
+                <ul className="list-inline d-inline-block">
+                  <li className="list-inline-item"><a href="#">World</a></li>
+                  <li className="list-inline-item"><a href="#">American</a></li>
+                  {/* Add other keywords */}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main content */}
+      <main className="bg-grey pb-30">
+        <div
+          className="entry-header entry-header-style-2 pb-80 pt-80 mb-50 text-white"
+          style={{ backgroundImage: 'url(/assets/imgs/theme/sample-image.jpg)' }}
+        >
+          <div className="container entry-header-content">
+            <h1 className="entry-title mb-50 font-weight-900">
+              The effect of livestock on the physiological condition of roe deer is modulated by habitat quality
+            </h1>
+            <div className="entry-meta align-items-center meta-2 font-small color-white">
+              <p className="mb-5 text-white">
+                <a className="author-avatar" href="#">
+                  <img className="img-circle" src="http://via.placeholder.com/300x300" alt="" />
+                </a>
+                By <a href="author.html"><span className="author-name font-weight-bold text-white">Barbara Cartland</span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Main article content */}
+        <div className="container single-content">
+          <article className="entry-wraper mb-50">
+            <div className="excerpt mb-30">
+              <p>Gosh jaguar ostrich quail one excited...</p>
+            </div>
+            <div className="entry-main-content">
+              <p>Fretful human far recklessly while caterpillar...</p>
+              <figure>
+                <ul className="blocks-gallery-grid">
+                  <li><a href="#"><img className="border-radius-5" src="http://via.placeholder.com/500x500" alt="" /></a></li>
+                  {/* Add more images */}
+                </ul>
+                <figcaption>Image credit: Pexel</figcaption>
+              </figure>
+              {/* Continue the rest of the content */}
+            </div>
+          </article>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <Footer />
+    </>
+  );
+}

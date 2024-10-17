@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve", // Remove this comment
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "components/**/*",
+    "pages/**/*",
+    ".next/types/**/*.ts"
+, "app/layout.mdx", "app/index.mdx", "app/typography/page.mdx", "app/search/page.mdx", "app/register/page.mdx", "app/posts/single-4/page.mdx", "app/posts/single-3/page.mdx", "app/posts/single-2/page.mdx", "app/posts/single/page.mdx", "app/page-404/page.mdx", "app/login/page.mdx", "app/home-3/page.mdx", "app/home-3/page.mdx", "app/home-2/page.mdx", "app/contact/page.mdx", "app/category-masonry/page.mdx", "app/category-list/page.mdx", "app/category-grid/page.mdx", "app/category-big/page.mdx", "app/category/page.mdx", "app/author/page.mdx", "app/about/page.mdx"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
